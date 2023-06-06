@@ -22,11 +22,13 @@ h1 {
 	font-family: 'Montserrat';
     font-weight: 900;
     font-style: normal;
- top: 50%; /* moved down by 50% of the screen height */
- transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
- width: 100%; /* needs to be defined to keep the default block behavior */
- text-align: center;
- margin: 0;
+		}
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
 }
 		}
 @keyframes gradient {
@@ -85,7 +87,9 @@ h1 {
 </head>
 <html>
 <body>
+	<div class="center">
 	<h1>TRANG TÍCH ĐIỂM</h1>
+	</div>
 		<div class="wrap">
    <div class="search">
       <input type="text" class="searchTerm" placeholder="Search">
